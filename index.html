@@ -4,160 +4,187 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CIDADE DE DEUS ROLEPLAY</title>
+
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #0a0a0a;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0a0a0a;
       color: white;
     }
 
     header {
       background: linear-gradient(90deg, #8b0000, black);
-      padding: 20px;
+      padding: 30px;
       text-align: center;
-      font-size: 28px;
-      font-weight: bold;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
     }
 
     nav {
-      background-color: #111;
+      background: #111;
       display: flex;
       justify-content: center;
-      gap: 20px;
-      padding: 10px;
+      gap: 25px;
+      padding: 15px;
     }
 
     nav a {
       color: white;
       text-decoration: none;
       font-weight: bold;
+      transition: 0.3s;
     }
 
     nav a:hover {
       color: red;
     }
 
-    section {
-      padding: 40px;
+    .hero {
       text-align: center;
+      padding: 80px 20px;
+      background: url('https://i.imgur.com/8Km9tLL.jpg') center/cover;
     }
 
-    .card {
-      background-color: #111;
-      margin: 15px;
-      padding: 20px;
-      border-radius: 10px;
-      display: inline-block;
-      width: 250px;
+    .hero h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
     }
 
     .btn {
       display: inline-block;
-      margin-top: 10px;
-      padding: 10px 20px;
-      background-color: red;
+      margin-top: 15px;
+      padding: 12px 25px;
+      background: red;
       color: white;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 8px;
+      transition: 0.3s;
     }
 
     .btn:hover {
-      background-color: darkred;
+      background: darkred;
+      transform: scale(1.05);
+    }
+
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background: #111;
+      padding: 20px;
+      border-radius: 15px;
+      width: 260px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 20px rgba(255,0,0,0.5);
     }
 
     footer {
-      background-color: #111;
-      text-align: center;
+      background: #111;
       padding: 20px;
-      margin-top: 20px;
+      text-align: center;
+      margin-top: 30px;
     }
   </style>
 </head>
+
 <body>
 
 <header>
-  CIDADE DE DEUS ROLEPLAY
+  <h1>CIDADE DE DEUS ROLEPLAY</h1>
 </header>
 
 <nav>
-  <a href="#home">Home</a>
+  <a href="#">Home</a>
   <a href="#vip">VIP</a>
   <a href="#dinheiro">Dinheiro</a>
   <a href="#outros">Outros</a>
-  <a href="#regras">Regras</a>
 </nav>
 
-<section id="home">
-  <h1>Bem-vindo ao servidor!</h1>
-  <p>Entre agora e viva a melhor experiência de Roleplay no MTA!</p>
-</section>
+<div class="hero">
+  <h1>O melhor servidor de MTA RP</h1>
+  <p>Entre agora e viva uma experiência única!</p>
+  <a href="mtasa://SEU_IP:PORTA" class="btn">Entrar no Servidor</a>
+</div>
 
 <section id="vip">
   <h1>💎 VIP</h1>
-  <div class="card">
-    <h2>VIP Bronze</h2>
-    <p>Benefícios básicos</p>
-    <p>R$10</p>
-    <a href="#" class="btn">Comprar</a>
-  </div>
+  <div class="grid">
+    <div class="card">
+      <h2>VIP Bronze</h2>
+      <p>Benefícios básicos</p>
+      <p>R$10</p>
+      <a href="#" class="btn">Comprar</a>
+    </div>
 
-  <div class="card">
-    <h2>VIP Prata</h2>
-    <p>Mais vantagens</p>
-    <p>R$20</p>
-    <a href="#" class="btn">Comprar</a>
-  </div>
+    <div class="card">
+      <h2>VIP Prata</h2>
+      <p>Mais vantagens</p>
+      <p>R$20</p>
+      <a href="#" class="btn">Comprar</a>
+    </div>
 
-  <div class="card">
-    <h2>VIP Ouro</h2>
-    <p>Máximo de benefícios</p>
-    <p>R$40</p>
-    <a href="#" class="btn">Comprar</a>
+    <div class="card">
+      <h2>VIP Ouro</h2>
+      <p>Máximo de benefícios</p>
+      <p>R$40</p>
+      <a href="#" class="btn">Comprar</a>
+    </div>
   </div>
 </section>
 
 <section id="dinheiro">
-  <h1>💰 Comprar Dinheiro</h1>
+  <h1>💰 Dinheiro</h1>
+  <div class="grid">
+    <div class="card">
+      <h2>100k</h2>
+      <p>R$5</p>
+      <a href="#" class="btn">Comprar</a>
+    </div>
 
-  <div class="card">
-    <h2>100k</h2>
-    <p>R$5</p>
-    <a href="#" class="btn">Comprar</a>
-  </div>
-
-  <div class="card">
-    <h2>500k</h2>
-    <p>R$20</p>
-    <a href="#" class="btn">Comprar</a>
+    <div class="card">
+      <h2>1M</h2>
+      <p>R$50</p>
+      <a href="#" class="btn">Comprar</a>
+    </div>
   </div>
 </section>
 
 <section id="outros">
-  <h1>📦 Outros Serviços</h1>
+  <h1>📦 Outros</h1>
+  <div class="grid">
+    <div class="card">
+      <h2>Troca de ID</h2>
+      <p>R$15</p>
+      <a href="#" class="btn">Comprar</a>
+    </div>
 
-  <div class="card">
-    <h2>Troca de ID</h2>
-    <p>R$15</p>
-    <a href="#" class="btn">Comprar</a>
+    <div class="card">
+      <h2>Reset Conta</h2>
+      <p>R$10</p>
+      <a href="#" class="btn">Comprar</a>
+    </div>
   </div>
-
-  <div class="card">
-    <h2>Reset de Conta</h2>
-    <p>R$10</p>
-    <a href="#" class="btn">Comprar</a>
-  </div>
-</section>
-
-<section id="regras">
-  <h1>📜 Regras</h1>
-  <p>Respeitar todos os jogadores.</p>
-  <p>Proibido uso de cheats.</p>
-  <p>Valorizar o roleplay.</p>
 </section>
 
 <footer>
-  © 2026 CIDADE DE DEUS ROLEPLAY - Todos os direitos reservados
+  © 2026 Cidade de Deus Roleplay
 </footer>
 
 </body>
